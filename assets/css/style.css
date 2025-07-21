@@ -1,0 +1,480 @@
+/**************************General Styles*************************/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.circleSec {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.fw-med {
+    font-weight: 500;
+}
+
+:root {
+    --bHover: #EDF4FC;
+    --bColor: #0d6efd;
+    --gray: #939393;
+}
+
+.btns {
+    padding: 15px 30px;
+    border-radius: 13px;
+}
+
+.blueBtn {
+
+    padding: 10px 20px;
+    color: var(--bColor);
+    border: 2px solid var(--bColor);
+    border-radius: 8px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.blueBtn:hover {
+    background-color: var(--bHover);
+
+}
+
+/**************************Header Styles*************************/
+header {
+    padding: 10px;
+}
+
+.menu,
+.menu0 {
+    list-style: none;
+}
+
+.menu li {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.menu0 a {
+    text-decoration: none;
+    color: #000;
+    padding: 35px 20px;
+    transition: all ease-in-out .15s;
+}
+
+.menu0 a:hover {
+    border-bottom: 5px solid #0d6efd;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.logo {
+    width: 90px;
+    height: 63px;
+}
+
+.serviceDropdownItemes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    color: #000;
+    border-radius: 30px;
+    width: 100%;
+}
+
+.border-b {
+    border-bottom: #ededed solid 2px;
+
+}
+
+.menu li {
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.menu li:hover {
+    background-color: rgba(15, 92, 143, 0.214);
+}
+
+.OptionesImg {
+    max-width: 100%;
+    height: auto;
+}
+
+.service {
+    position: relative;
+    cursor: pointer;
+}
+
+
+.serviceDropdown,
+.loanDropDown,
+.contactDropDown {
+    display: none;
+    background: #fff;
+    padding: 10px;
+    border: 1px solid #ccc;
+
+}
+
+.serviceDropdownOn,
+.loanDropDownOn,
+.contactDropDownOn {
+    display: block;
+    position: absolute;
+    padding: 20px;
+    border-radius: 20px;
+    margin-top: 42px;
+    width: 621px;
+    z-index: 3;
+
+}
+
+
+
+.loanDropDownItemes,
+.contactDropDownItemes {
+    color: #000;
+    border-radius: 30px;
+    width: 100%;
+
+}
+
+
+
+/***********************************Circle Sec****************************/
+.txt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    gap: 10px;
+}
+
+.txt h2 {
+    color: #071952;
+    font-size: xxx-large;
+    font-weight: bold;
+}
+
+.blue {
+    text-decoration: none;
+    cursor: none;
+}
+
+.introduce {
+    padding: 10px 20px;
+    border-radius: 8px;
+    display: inline-block;
+    transition: all 0.3s ease;
+    color: var(--bColor);
+    text-decoration: none;
+
+}
+
+.introduce:hover {
+    background-color: var(--bHover);
+    color: #fff;
+}
+
+
+.box {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    animation: animate 50s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        rotate: 0deg;
+    }
+
+    100% {
+        rotate: 360deg;
+    }
+}
+
+.container:hover .box {
+    animation-play-state: paused;
+}
+
+.box .img {
+    position: relative;
+    left: -63%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.box .img .imgBx {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    box-shadow: 0 0 0 3px #ffffff;
+    transform: rotate(calc(360deg/11 * var(--i)));
+    transform-origin: 350px;
+}
+
+.box .img .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    transform: rotate(calc(-360deg/11 * var(--i)));
+    animation: animateImgBx 50s linear infinite;
+}
+
+@keyframes animateImgBx {
+    0% {
+        rotate: 0deg;
+    }
+
+    100% {
+        rotate: -360deg;
+    }
+}
+
+.container:hover .img .imgBx img {
+    animation-play-state: paused;
+}
+
+/***********************************Profit Div****************************/
+
+
+.profitBox,
+.loanBox {
+    background-color: #E5F7F4;
+    padding: 50px;
+    border-radius: 30px;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+.loanBox {
+    background-color: #F2F1F9;
+}
+
+.profitTxt,
+.loanTxt {
+    text-align: right;
+    text-align: justify;
+
+}
+
+
+.profitImgBox,
+.loanImgBox {
+    text-align: left;
+}
+
+.profitImg {
+    transition: all 0.3s ease;
+    max-width: 200px;
+    max-height: 200px;
+}
+
+.loanImg {
+    transition: all 0.3s ease;
+    max-width: 400px;
+    max-height: 400px;
+
+}
+
+.iconBox {
+    text-align: right;
+}
+
+.icon-wrapper {
+    display: inline-flex;
+    align-items: center;
+    background: white;
+    padding: 10px 12px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    overflow: hidden;
+    width: 45px;
+    /* فقط اندازه آیکون */
+}
+
+.icon {
+    font-size: 24px;
+    transition: transform 0.3s ease;
+    color: var(--bColor);
+}
+
+.label {
+    margin-left: 10px;
+    white-space: nowrap;
+    opacity: 0;
+    transform: scale(0.8);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    color: #ffffff;
+
+
+}
+
+.profitBox:hover .icon-wrapper {
+    width: 150px;
+    background-color: var(--bColor);
+
+}
+
+.profitBox:hover .icon {
+    color: #fff;
+}
+
+.profitBox:hover .label {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.profitBox:hover .profitImg {
+    transform: scale(1.1);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+
+}
+
+
+
+/***********************************Enjoy Div****************************/
+
+.enjoyBox {
+    background-color: #FBF2F3;
+    padding: 50px;
+    border-radius: 30px;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+
+.enjoyBox:hover .profitImg {
+    transform: scale(1.1);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/***********************************Loan Sec****************************/
+
+.loanSec {
+    margin-bottom: 100px;
+}
+
+.loanBox:hover .icon-wrapper {
+    width: 150px;
+    background-color: var(--bColor);
+
+}
+
+.icon i {
+    transform: rotate(45deg);
+}
+
+.loanBox:hover .icon {
+    color: #fff;
+}
+
+.loanBox:hover .label {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.loanBox:hover .loanImg {
+    transform: scale(1.1);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+
+}
+
+/***********************************blueLine Sec****************************/
+.blueLine {
+    background-color: var(--bColor);
+    width: 100%;
+    height: 100%;
+}
+
+.blueLineTxt {
+    color: #fff;
+}
+
+.blueLineTxt h2 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    line-height: 160%;
+}
+
+.blueLineUl {
+    list-style: none;
+    padding: 20px;
+    padding-right: 40px;
+    gap: 45px;
+    font-weight: 400;
+    font-size: 20px;
+
+}
+
+.reviewItem {
+    background-color: var(--grayBg);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+
+
+/***********************************Slider****************************/
+
+.socialMedia {
+    width: 100%;
+    padding: 50px 0;
+}
+
+.sliderTop {
+    width: 100%;
+}
+
+.owl-carousel {
+    width: 100%;
+    overflow: hidden;
+}
+
+ .reviewBox {
+    background: #F7F9FA;
+    padding: 40px 20px;
+    margin: 10px;
+    color: #000;
+    border-radius: 12px;
+    text-align: center;
+    min-height: 100px;
+    width: 100%;
+}
+.reviewBox{
+    width: 350px;
+}
+
+.photo img {
+    width: 50px;
+    margin-left: 20px;
+}
+
+.user p {
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--gray);
+}
+
+.review i {
+    font-size: 30px;
+    color: var(--gray);
+}

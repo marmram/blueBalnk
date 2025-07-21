@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>اسلایدر تستی</title>
+
+  <!-- Owl Carousel CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+  <link rel="stylesheet" href="test.css">
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 0;
+      background: #f4f4f4;
+    }
+
+    .owl-carousel .item {
+      background: #F7F9FA;
+      color: white;
+      padding: 40px 0;
+      text-align: center;
+      font-size: 24px;
+      border-radius: 10px;
+    }
+
+    .owl-carousel .owl-item img {
+      display: block;
+      width: 50px;
+      margin-left: 20px;
+    }
+
+    .owl-carousel .userName h6 {
+      color: black;
+    }
+
+    .owl-carousel .userName p {
+      color: #939393;
+      font-size: 12px;
+      font-weight: 500;
+    }
+
+    .Profile {
+      display: flex;
+      align-items: stretch;
+      justify-content: space-between;
+    }
+
+    .userProfile {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="owl-carousel owl-theme">
+    <div class="item">
+      <div class="item">
+        <div class="reviewBox">
+          <p>بلوبانک واقعاً بانک محبوبمه. همه‌چیزش یوزرفرندلیه.</p>
+
+          <div class="review d-flex align-items-center justify-content-between">
+            <div class="profile d-flex align-items-stretch justify-content-center">
+              <div class="photo">
+                <img src="assets/images/tweet-avatar.png" alt="">
+              </div>
+              <div class="user ">
+
+                <h6>sabaaaa21</h6>
+                <p>مهر 1404</p>
+              </div>
+
+            </div>
+            <i class="fa-brands fa-x-twitter"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="item">آیتم ۲</div>
+    <div class="item">آیتم ۳</div>
+    <div class="item">آیتم ۴</div>
+    <div class="item">آیتم ۵</div>
+    <div class="item">آیتم ۶</div>
+  </div>
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+  <!-- Owl Carousel JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+  <!-- Init Script -->
+  <script>
+    $(document).ready(function () {
+      $(".owl-carousel").owlCarousel({
+        rtl: true,
+        loop: true,
+        margin: 20,
+        nav: true,
+        autoplay: true,
+        autoplayTimeout: 3000,
+        autoplaySpeed: 800,
+        slideBy: 2,
+        responsive: {
+          0: { items: 1 },
+          600: { items: 2 },
+          1000: { items: 3 }
+        }
+      });
+    });
+  </script>
+
+</body>
+
+</html>
