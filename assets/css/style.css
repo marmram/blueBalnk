@@ -5,18 +5,27 @@
     box-sizing: border-box;
 }
 
-.circleSec {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
+@font-face {
+    font-family: "Yekan Bakh VF";
+    src: url('../assets/fonts/Yekan_Bakh_Fanum_Regular.TTF') format('ttf');
+    font-weight: normal;
+    font-style: normal;
 }
+
+body {
+    font-family: "Yekan Bakh VF", tahoma, arial, serif;
+}
+
 
 .fw-med {
     font-weight: 500;
 }
-
+.mb-130{
+    margin-bottom: 130px;
+}
+.mb-80{
+    margin-bottom: 80px;
+}
 :root {
     --bHover: #EDF4FC;
     --bColor: #0d6efd;
@@ -36,6 +45,12 @@
     border-radius: 8px;
     background-color: #fff;
     text-align: center;
+    font-size: 1.125rem;
+}
+
+.blueBtnNborder {
+    border: 2px solid rgba(255, 255, 255, 0);
+
 }
 
 .blueBtn:hover {
@@ -53,10 +68,10 @@ header {
     list-style: none;
 }
 
-.menu li {
+/* .menu li {
     padding-left: 0 !important;
     padding-right: 0 !important;
-}
+} */
 
 .menu0 a {
     text-decoration: none;
@@ -90,13 +105,29 @@ header {
 
 }
 
+.menu {
+    padding-left: 0;
+}
+
 .menu li {
     padding: 10px 20px;
     border-radius: 10px;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
 }
 
 .menu li:hover {
-    background-color: rgba(15, 92, 143, 0.214);
+    background-color: #EDF4FC;
+}
+
+.menuIcon {
+    color: var(--bColor);
+    display: none;
+}
+
+.menu li:hover .menuIcon {
+    display: inline;
 }
 
 .OptionesImg {
@@ -109,6 +140,9 @@ header {
     cursor: pointer;
 }
 
+.dropdownColumn {
+    width: 260px;
+}
 
 .serviceDropdown,
 .loanDropDown,
@@ -128,7 +162,6 @@ header {
     padding: 20px;
     border-radius: 20px;
     margin-top: 42px;
-    width: 621px;
     z-index: 3;
 
 }
@@ -165,13 +198,20 @@ header {
 
 .blue {
     text-decoration: none;
-    cursor: none;
+    cursor: auto;
+
+}
+
+.blue:hover {
+    color: var(--bColor);
 }
 
 .introduce {
     padding: 10px 20px;
     border-radius: 8px;
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     transition: all 0.3s ease;
     color: var(--bColor);
     text-decoration: none;
@@ -179,10 +219,21 @@ header {
 }
 
 .introduce:hover {
-    background-color: var(--bHover);
-    color: #fff;
+    background-color: #edf4fc;
 }
 
+.introduce i {
+    padding: 5px;
+    margin-top: 8px;
+}
+
+.circleSec {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
 
 .box {
     position: relative;
@@ -252,6 +303,117 @@ header {
     animation-play-state: paused;
 }
 
+/***********************************card colors Div****************************/
+.videoBox{
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+}
+
+.cardColors {
+    height: 100vh;
+}
+
+.blueLead {
+    color: #718e9c;
+    font-weight: 400;
+    line-height: 180%;
+}
+.cards{
+     background: #eef4fc;
+    border-radius: 1.5rem;
+
+}
+.verticalBox {
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.cardGrid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-rows: auto;
+    gap: 20px;
+}
+
+.videoDiv {
+    position: relative;
+}
+
+.colors {
+    position: absolute;
+    list-style: none;
+    bottom: 0;
+    padding: 25px;
+}
+
+.colorSelectionItem {
+    list-style: none;
+    margin-bottom: 1rem;
+    width: 37px;
+    height: 37px;
+    border: 2px solid transparent;
+    transition: border 0.2s ease;
+    border-radius: 50%;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.colorSelectionItem:hover {
+    border: 2px solid #4980e0;
+
+}
+.active{
+    border: 2px solid #4980e0;
+
+}
+
+.colorSelection {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin: 2px;
+}
+
+.selectedBlue {
+    background: var(--bColor);
+
+}
+.selectedRed{
+    background-color: #ff0d3b;
+}
+.selectedGreen{
+    background-color: #00ab84;
+}
+.selectedPurple{
+    background-color: #6558b1;
+}
+.selectedYellow{
+    background-color: #ffd100;
+}
+.selectedRosegold{
+    background-color: #e1a6ad;
+}
+.selectedBlack{
+    background-color: #000;
+}
+.cardPos{
+    position: absolute;
+}
+.op-0{
+    opacity: 0;
+}
+.cardsVertical{
+    position: relative;
+}
+.VcardPos{
+    position: absolute;
+}
+
 /***********************************Profit Div****************************/
 
 
@@ -308,7 +470,7 @@ header {
     transition: all 0.3s ease;
     overflow: hidden;
     width: 45px;
-    /* فقط اندازه آیکون */
+    height: 45px;
 }
 
 .icon {
@@ -369,9 +531,7 @@ header {
 
 /***********************************Loan Sec****************************/
 
-.loanSec {
-    margin-bottom: 100px;
-}
+
 
 .loanBox:hover .icon-wrapper {
     width: 150px;
@@ -400,9 +560,15 @@ header {
 
 /***********************************blueLine Sec****************************/
 .blueLine {
+    background: url(../images/Orbit.svg);
+    background-position-x: 70%;
+    background-position-y: 0;
+    background-repeat: no-repeat;
     background-color: var(--bColor);
     width: 100%;
     height: 100%;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
 }
 
 .blueLineTxt {
@@ -434,10 +600,16 @@ header {
 
 
 /***********************************Slider****************************/
-
+.item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+}
 .socialMedia {
     width: 100%;
     padding: 50px 0;
+
 }
 
 .sliderTop {
@@ -449,7 +621,7 @@ header {
     overflow: hidden;
 }
 
- .reviewBox {
+.reviewBox {
     background: #F7F9FA;
     padding: 40px 20px;
     margin: 10px;
@@ -457,11 +629,9 @@ header {
     border-radius: 12px;
     text-align: center;
     min-height: 100px;
-    width: 100%;
+    width: 380px;
 }
-.reviewBox{
-    width: 350px;
-}
+
 
 .photo img {
     width: 50px;
@@ -477,4 +647,53 @@ header {
 .review i {
     font-size: 30px;
     color: var(--gray);
+}
+
+/****************************************teaser sec******************************************/
+.teaserSec {
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.teaser {
+    position: relative;
+}
+
+.teaserContent {
+    background: url('../images/teaser-background.svg') no-repeat;
+    background-size: cover;
+    border-radius: 1rem;
+    color: white;
+    position: relative;
+    margin-top: 10rem;
+    height: 350px;
+    padding: 48px 80px;
+    margin: 20px;
+}
+
+.blue-fs-h2 {
+    font-size: 2rem;
+    line-height: 160%;
+}
+
+.teaserContent p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 180%;
+    margin-top: 16px;
+    margin-bottom: 24px;
+}
+
+.teaserImg {
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    text-align: center;
+    max-width: 565px;
+
+}
+
+.teaserImg img {
+    margin: 0;
+    width: 100%;
 }

@@ -1,3 +1,6 @@
+  document.addEventListener("DOMContentLoaded", function () {
+
+
 let $ = document;
 
 let serviceLi = $.querySelector(".service");
@@ -10,13 +13,13 @@ let contactDrop = $.querySelector(".contactDropDown")
 function closeAllDropdowns() {
     serviceDrop.classList.remove("serviceDropdownOn");
     loanDrop.classList.remove("loanDropDownOn");
-    loanDrop.classList.remove("contactDropDownOn");
+    contactDrop.classList.remove("contactDropDownOn");
 }
 
 serviceLi.addEventListener("click", function (event) {
     event.preventDefault();
     let isOpen = serviceDrop.classList.contains("serviceDropdownOn");
-    closeAllDropdowns(); 
+    closeAllDropdowns();
     if (!isOpen) {
         serviceDrop.classList.add("serviceDropdownOn");
     }
@@ -31,14 +34,14 @@ loanLi.addEventListener("click", function (event) {
     }
 });
 
-contactLi.addEventListener("click", function(event){
+contactLi.addEventListener("click", function (event) {
     event.preventDefault();
     let isOpen = contactDrop.classList.contains("contactDropDownOn");
     closeAllDropdowns();
-    if(!isOpen){
-        contactDrop.classList.add("contactDropDownOn")
+    if (!isOpen) {
+        contactDrop.classList.toggle("contactDropDownOn")
     }
-})
+});
 
 $.addEventListener("click", function (e) {
     if (
@@ -53,22 +56,71 @@ $.addEventListener("click", function (e) {
     }
 });
 
-/*document.addEventListener("click", (e) => {
-  let service = document.querySelector(".serviceDropdown");
-  let loan = document.querySelector(".loanDropDown");
-  let contact = document.querySelector(".contactDropDown");
+let selectedColor = $.querySelectorAll(".colorSelectionItem")
 
-  // بسته شدن همه دراپ‌داون‌ها
-  [service, loan, contact].forEach(el => el.classList.remove("serviceDropdownOn", "loanDropDownOn", "contactDropDownOn"));
 
-  // باز شدن مورد کلیک‌شده
-  if (e.target.closest(".service")) {
-    service.classList.add("serviceDropdownOn");
-  } else if (e.target.closest(".loanLi")) {
-    loan.classList.add("loanDropDownOn");
-  } else if (e.target.closest(".contactUs")) {
-    contact.classList.add("contactDropDownOn");
-  }
+let videos = {
+    blue: $.querySelector(".blueCard"),
+    red: $.querySelector(".redCard"),
+    green: $.querySelector(".greenCard"),
+    purple: $.querySelector(".purpleCard"),
+    yellow: $.querySelector(".yellowCard"),
+    rosegold: $.querySelector(".rosegoldCard"),
+    black: $.querySelector(".blackCard"),
+};
+
+let backCard = {
+    blue: $.querySelector(".backBlue"),
+    red: $.querySelector(".backRed"),
+    green: $.querySelector(".backGreen"),
+    purple: $.querySelector(".backPurple"),
+    yellow: $.querySelector(".backYellow"),
+    rosegold: $.querySelector(".backRosegold"),
+    black: $.querySelector(".backBlack"),
+};
+
+let frontCard = {
+    blue: $.querySelector(".frontBlue"),
+    red: $.querySelector(".frontRed"),
+    green: $.querySelector(".frontGreen"),
+    purple: $.querySelector(".frontPurple"),
+    yellow: $.querySelector(".frontYellow"),
+    rosegold: $.querySelector(".frontRosegold"),
+    black: $.querySelector(".frontBlack"),
+};
+
+function hideAllVideos() {
+    for (let key in videos) {
+        videos[key].style.opacity = "0";
+        backCard[key].style.opacity = "0";
+        frontCard[key].style.opacity = "0";
+
+    }
+}
+
+
+hideAllVideos();
+
+videos.blue.style.opacity = "1";
+backCard.blue.style.opacity = "1";
+frontCard.blue.style.opacity ="1";
+
+selectedColor.forEach(item => {
+    item.addEventListener("click", function () {
+        selectedColor.forEach(element => {
+            element.classList.remove("active")
+        });
+        this.classList.add("active")
+
+        let color = this.querySelector("[data-color]")?.dataset.color;
+
+        if (color && videos[color]) {
+            hideAllVideos();
+            videos[color].style.opacity = "1";
+            backCard[color].style.opacity = "1";
+            frontCard[color].style.opacity ="1";
+        }
+    })
+
 });
-*/
-
+});
