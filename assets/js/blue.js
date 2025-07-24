@@ -187,13 +187,17 @@ document.addEventListener("DOMContentLoaded", function () {
     let questionBoxes = document.querySelectorAll(".questionBoxS");
 
     questionBoxes.forEach(questionBox => {
+
         // هر بار فقط عناصر داخلی همین questionBox رو می‌گیریم
+
         let plusIcon = questionBox.querySelector(".plusIcon");
         let questionBtn = questionBox.querySelector(".questionBtn");
         let answerBox = questionBox.querySelector(".answerBox");
 
         questionBox.addEventListener("click", () => {
+
             // حذف کلاس‌های فعال از بقیه سوال‌ها
+
             questionBoxes.forEach(box => {
                 if (box !== questionBox) {
                     box.querySelector(".plusIcon").classList.remove("plusIconClicked");
@@ -213,7 +217,7 @@ document.addEventListener("DOMContentLoaded", function () {
             answerBox.classList.toggle("answerBoxClicked");
             questionBox.classList.toggle("questionBoxClicked")
             if (answerBox.classList.contains("answerBoxClicked")) {
-                answerBox.style.maxHeight = answerBox.scrollHeight + "1px";
+                answerBox.style.maxHeight = answerBox.scrollHeight + "px";
                 answerBox.style.opacity = "1";
             } else {
                 answerBox.style.maxHeight = "0";
