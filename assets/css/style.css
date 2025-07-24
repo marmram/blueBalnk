@@ -16,21 +16,33 @@ body {
     font-family: "Yekan Bakh VF", tahoma, arial, serif;
 }
 
-
-.fw-med {
-    font-weight: 500;
-}
-.mb-130{
-    margin-bottom: 130px;
-}
-.mb-80{
-    margin-bottom: 80px;
-}
 :root {
     --bHover: #EDF4FC;
     --bColor: #0d6efd;
     --gray: #939393;
 }
+
+.fw-med {
+    font-weight: 500;
+}
+
+.mb-130 {
+    margin-bottom: 130px;
+}
+
+.mb-80 {
+    margin-bottom: 80px;
+}
+
+.mb-100 {
+    margin-bottom: 100px;
+}
+
+.mt-100 {
+    margin-top: 100px;
+}
+
+
 
 .btns {
     padding: 15px 30px;
@@ -304,7 +316,7 @@ header {
 }
 
 /***********************************card colors Div****************************/
-.videoBox{
+.videoBox {
     display: flex;
     align-items: stretch;
     justify-content: center;
@@ -319,13 +331,15 @@ header {
     font-weight: 400;
     line-height: 180%;
 }
-.cards{
-     background: #eef4fc;
+
+.cards {
+    background: #eef4fc;
     border-radius: 1.5rem;
 
 }
+
 .verticalBox {
-   
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -367,7 +381,8 @@ header {
     border: 2px solid #4980e0;
 
 }
-.active{
+
+.active {
     border: 2px solid #4980e0;
 
 }
@@ -383,34 +398,44 @@ header {
     background: var(--bColor);
 
 }
-.selectedRed{
+
+.selectedRed {
     background-color: #ff0d3b;
 }
-.selectedGreen{
+
+.selectedGreen {
     background-color: #00ab84;
 }
-.selectedPurple{
+
+.selectedPurple {
     background-color: #6558b1;
 }
-.selectedYellow{
+
+.selectedYellow {
     background-color: #ffd100;
 }
-.selectedRosegold{
+
+.selectedRosegold {
     background-color: #e1a6ad;
 }
-.selectedBlack{
+
+.selectedBlack {
     background-color: #000;
 }
-.cardPos{
+
+.cardPos {
     position: absolute;
 }
-.op-0{
+
+.op-0 {
     opacity: 0;
 }
-.cardsVertical{
+
+.cardsVertical {
     position: relative;
 }
-.VcardPos{
+
+.VcardPos {
     position: absolute;
 }
 
@@ -569,10 +594,12 @@ header {
     height: 100%;
     padding-top: 5rem;
     padding-bottom: 5rem;
+    margin-bottom: 100px;
 }
 
 .blueLineTxt {
     color: #fff;
+    margin-right: 30px;
 }
 
 .blueLineTxt h2 {
@@ -584,7 +611,7 @@ header {
 .blueLineUl {
     list-style: none;
     padding: 20px;
-    padding-right: 40px;
+    padding-right: 50px;
     gap: 45px;
     font-weight: 400;
     font-size: 20px;
@@ -600,12 +627,13 @@ header {
 
 
 /***********************************Slider****************************/
-.item{
+.item {
     display: flex;
     align-items: center;
     justify-content: center;
     border: none;
 }
+
 .socialMedia {
     width: 100%;
     padding: 50px 0;
@@ -623,13 +651,13 @@ header {
 
 .reviewBox {
     background: #F7F9FA;
-    padding: 40px 20px;
+    padding: 20px 20px;
     margin: 10px;
     color: #000;
     border-radius: 12px;
     text-align: center;
-    min-height: 100px;
-    width: 380px;
+    width: 100%;
+    height: 100%;
 }
 
 
@@ -696,4 +724,124 @@ header {
 .teaserImg img {
     margin: 0;
     width: 100%;
+}
+
+.faqSpan {
+    background-color: #00ab84;
+    color: white;
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 4rem;
+}
+
+.findAnswers {
+    color: var(--gray);
+}
+
+.faqBtnS {
+    padding: 5px 10px;
+    border: solid 2px #f1efef;
+
+    border-radius: 4rem;
+    font-weight: 500;
+    transition: all ease .3s;
+}
+
+.faqBtn {
+    color: var(--gray);
+    background-color: #fff;
+}
+
+.faqBtn:hover {
+    background-color: var(--bHover);
+}
+
+.faqBtnClicked {
+    background-color: var(--bColor);
+    color: #fff;
+}
+
+.faqBtnClicked:hover {
+    background-color: #0b5ed7;
+}
+
+.questionBoxS {
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    transition: all ease .5s, opacity ease .5s;
+
+}
+
+.questionBox:hover {
+    background-color: var(--bHover);
+}
+
+.questionBoxClicked {
+    background-color: var(--bColor);
+    color: #fff;
+}
+
+.questionBoxClicked {
+    background-color: #458ce2 !important;
+}
+
+.questionBtn {
+    text-align: right;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 218%;
+    background-color: transparent;
+    border: none;
+}
+
+.questionBtnClicked {
+    color: #fff;
+}
+
+.plusIcon {
+    line-height: 1rem;
+    padding-left: 15px;
+    color: var(--bColor);
+    transition: transform ease .4s;
+}
+
+.plusIconClicked {
+    transform: rotate(45deg);
+    color: #fff;
+}
+
+.answerBox {
+    margin: 0 23px 0 0;
+    border-right: 2px solid #6e9be5;
+    color: #fff;
+    opacity: 0;
+    padding: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, opacity 0.4s ease, padding 0.4s ease;
+
+}
+
+.answerBoxClicked {
+    opacity: 1;
+    padding: 0 39px 2rem 0;
+    max-height: 200px;
+}
+
+.answer {
+    list-style: none;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 175%;
+}
+
+.answer a {
+    text-decoration: none;
+    color: #ccc;
+
+}
+
+.openAccountQ {
+    opacity: 0;
 }
