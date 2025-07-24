@@ -108,9 +108,9 @@ document.addEventListener("DOMContentLoaded", function () {
     selectedColor.forEach(item => {
         item.addEventListener("click", function () {
             selectedColor.forEach(element => {
-                element.classList.remove("active")
+                element.classList.remove("activeColor")
             });
-            this.classList.add("active")
+            this.classList.add("activeColor")
 
             let color = this.querySelector("[data-color]")?.dataset.color;
 
@@ -213,7 +213,7 @@ document.addEventListener("DOMContentLoaded", function () {
             answerBox.classList.toggle("answerBoxClicked");
             questionBox.classList.toggle("questionBoxClicked")
             if (answerBox.classList.contains("answerBoxClicked")) {
-                answerBox.style.maxHeight = answerBox.scrollHeight + "px";
+                answerBox.style.maxHeight = answerBox.scrollHeight + "1px";
                 answerBox.style.opacity = "1";
             } else {
                 answerBox.style.maxHeight = "0";

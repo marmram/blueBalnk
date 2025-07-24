@@ -7,13 +7,15 @@
 
 @font-face {
     font-family: "Yekan Bakh VF";
-    src: url('../assets/fonts/Yekan_Bakh_Fanum_Regular.TTF') format('ttf');
+    src: url('../fonts/Yekan_Bakh_Fanum_Regular.TTF') format('ttf');
     font-weight: normal;
     font-style: normal;
 }
 
 body {
     font-family: "Yekan Bakh VF", tahoma, arial, serif;
+    font-family: "Vazirmatn", sans-serif;
+
 }
 
 :root {
@@ -315,6 +317,10 @@ header {
     animation-play-state: paused;
 }
 
+.fastCaption {
+    text-align: right;
+}
+
 /***********************************card colors Div****************************/
 .videoBox {
     display: flex;
@@ -382,7 +388,7 @@ header {
 
 }
 
-.active {
+.activeColor {
     border: 2px solid #4980e0;
 
 }
@@ -626,7 +632,7 @@ header {
 
 
 
-/***********************************Slider****************************/
+/***********************************Review Slider****************************/
 .item {
     display: flex;
     align-items: center;
@@ -697,6 +703,23 @@ header {
     height: 350px;
     padding: 48px 80px;
     margin: 20px;
+}
+.collection{
+    height:500px; 
+    overflow: hidden;
+    padding: 50px 0;
+    background-color: #1e232e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.collection .content{
+    height: 160px;
+    width: 600px;
+    background-color: #1c3370bf;
+    border-radius: .7rem;
+    overflow: hidden;
+    /* padding: .2rem; */
 }
 
 .blue-fs-h2 {
@@ -844,4 +867,83 @@ header {
 
 .openAccountQ {
     opacity: 0;
+}
+
+.topFooter {
+    background-color: #F2F5F6;
+    height: 100vh;
+}
+
+.blueLogo p {
+    text-align: center;
+    font-size: 10px;
+}
+
+.goUp {
+    font-size: 28px;
+    color: var(--bColor);
+}
+
+.goUp i {
+    text-decoration: none;
+
+}
+
+.footerServices {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-row: 1;
+    gap: 20px;
+}
+
+.content {
+    width: 100%;
+}
+
+.content h6 {
+    font-weight: bold;
+}
+
+.content ul {
+    font-size: 14px;
+    line-height: 3;
+}
+
+.content a {
+    text-decoration: none;
+    color: var(--gray);
+
+    transition: all ease .3s;
+
+}
+
+.content a:hover {
+    font-size: 14pxّ;
+    font-weight: bold;
+}
+
+.content a:visited {
+    color: var(--gray);
+}
+
+.blueDownload h4 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.footerTop {
+    background-color: #F2F5F6;
+    padding-bottom: 30px;
+}
+
+.footerInfo {
+    color: #253035;
+    font-size: 14px;
+}
+
+.footerBottom {
+    padding-bottom: 30px;
+    padding-top: 30px;
+    background-color: #E4EAEC;
+    border-top: 2px solid #D2DBE0;
 }

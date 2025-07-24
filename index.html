@@ -8,6 +8,10 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+
     <link rel="stylesheet" href="assets/css/style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -201,6 +205,7 @@
                 </div>
             </div>
         </div>
+
         <section class="fastSec">
             <div class="container d-flex align-items-center justify-content-between">
                 <div class="d-flex align-items-center justify-content-between">
@@ -237,6 +242,22 @@
                         <h2 class="fw-bold mb-3">امن</h2>
                         <p class="fs-5 mb-2">کوتاه شدن دست کلاه‌برداران مجازی و حقیقی از سرمایه‌ی شما با استفاده از
                             سرویس‌های باکس پس‌انداز و مسدود سازی کارت و....</p>
+                        <a href="#" class="btns introduce w-50">
+                            <svg width="24" height="25" id="blujr-icon-add" viewBox="0 0 24 25" fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M12 3.29688C9.37665 3.29688 7.25 5.42352 7.25 8.04688C7.25 10.6702 9.37665 12.7969 12 12.7969C14.6234 12.7969 16.75 10.6702 16.75 8.04688C16.75 5.42352 14.6234 3.29688 12 3.29688ZM8.75 8.04688C8.75 6.25195 10.2051 4.79688 12 4.79688C13.7949 4.79688 15.25 6.25195 15.25 8.04688C15.25 9.8418 13.7949 11.2969 12 11.2969C10.2051 11.2969 8.75 9.8418 8.75 8.04688Z"
+                                    fill="#4e91e6"></path>
+                                <path
+                                    d="M15 18.0469C14.4477 18.0469 14 18.4946 14 19.0469V19.0569C14 19.6092 14.4477 20.0569 15 20.0569H15.01C15.5623 20.0569 16.01 19.6092 16.01 19.0569V19.0469C16.01 18.4946 15.5623 18.0469 15.01 18.0469H15Z"
+                                    fill="#4e91e6"></path>
+                                <path
+                                    d="M15 15.7969C16.7949 15.7969 18.25 17.2519 18.25 19.0469V20.0469C18.25 20.4611 18.5858 20.7969 19 20.7969C19.4142 20.7969 19.75 20.4611 19.75 20.0469V19.0469C19.75 16.4235 17.6234 14.2969 15 14.2969H11C10.5858 14.2969 10.25 14.6327 10.25 15.0469C10.25 15.4611 10.5858 15.7969 11 15.7969H15Z"
+                                    fill="#4e91e6"></path>
+                                <path
+                                    d="M7.25 15.0469C7.25 14.6327 6.91421 14.2969 6.5 14.2969C6.08579 14.2969 5.75 14.6327 5.75 15.0469V16.7969H4C3.58579 16.7969 3.25 17.1327 3.25 17.5469C3.25 17.9611 3.58579 18.2969 4 18.2969H5.75V20.0469C5.75 20.4611 6.08579 20.7969 6.5 20.7969C6.91421 20.7969 7.25 20.4611 7.25 20.0469V18.2969H9C9.41421 18.2969 9.75 17.9611 9.75 17.5469C9.75 17.1327 9.41421 16.7969 9 16.7969H7.25V15.0469Z"
+                                    fill="#4e91e6"></path>
+                            </svg> راهنمای بازکردن حساب
+                        </a>
                     </div>
                 </div>
 
@@ -253,7 +274,7 @@
                         <div class="videoBox position-relative">
                             <div class="coloraDiv">
                                 <ul class="colors">
-                                    <li class="colorSelectionItem active">
+                                    <li class="colorSelectionItem activeColor">
                                         <div class="colorSelection selectedBlue" data-color="blue"></div>
                                     </li>
                                     <li class="colorSelectionItem">
@@ -354,6 +375,7 @@
                             <p class="fs-6">با ساخت حساب بلند مدت در اپلیکیشن بلو برای سرمایه‌گذاری در ۳ ماه ۱۲ درصد، ۶
                                 ماه ۱۷ درصد و برای ۱۲ ماه تا ۲۰/۵ درصد سود دریافت کنید.</p>
 
+
                         </div>
                         <div class="profitImgBox">
                             <img class="profitImg" src="assets/images/mountain.webp" alt="">
@@ -424,105 +446,174 @@
                     <button type="button" class="blueBtn btns blueBtnNborder">ارتباط با بلولاین</button>
 
                 </div>
-                <div class="blueLineSlider w-50"></div>
-            </div>
-        </section>
-        <!-- review slider -->
-        <section class="socialMedia z-3">
-            <div class="followUs text-center">
-                <h2 class="fw-bold mb-4">ما را در شبکه‌های اجتماعی دنبال کنید</h2>
-                <div class="sliderTop">
-                    <div class="owl-carousel owl-theme">
-                        <div class="item">
-
-                            <div class="reviewBox ">
-                                <p>بلوبانک واقعاً بانک محبوبمه. همه‌چیزش یوزرفرندلیه.</p>
-
-                                <div class="review d-flex align-items-center justify-content-between">
-                                    <div class="profile d-flex align-items-stretch justify-content-center">
-                                        <div class="photo">
-                                            <img src="assets/images/tweet-avatar.png" alt="">
-                                        </div>
-                                        <div class="user ">
-
-                                            <h6>sabaaaa21</h6>
-                                            <p>مهر 1404</p>
-                                        </div>
-
+                <div class="blueLineSlider w-50">
+                    <div class="collection">
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="content swiper-slide">
+                                    <img src="assets/images/Image1.jpg" alt="" />
+                                    <div class="text-content">
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
+                                            accusamus ratione nesciunt atque, dolores vel culpa debitis
+                                            officia expedita unde?
+                                        </p>
                                     </div>
-                                    <i class="fa-brands fa-x-twitter"></i>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="item">
-
-                            <div class="reviewBox">
-                                <p>بلوبانک واقعاً بانک xndjdnمحبوبمه. همه‌چیزش یوزرفرندلیه.</p>
-
-                                <div class="review d-flex align-items-center justify-content-between">
-                                    <div class="profile d-flex align-items-stretch justify-content-center">
-                                        <div class="photo">
-                                            <img src="assets/images/tweet-avatar.png" alt="">
-                                        </div>
-                                        <div class="user ">
-
-                                            <h6>iliya-4909</h6>
-                                            <p>آبان 1404</p>
-                                        </div>
-
+                                <div class="content swiper-slide">
+                                    <img src="assets/images/Image2.jpg" alt="" />
+                                    <div class="text-content">
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
+                                            accusamus ratione nesciunt atque, dolores vel culpa debitis
+                                            officia expedita unde?
+                                        </p>
                                     </div>
-                                    <i class="fa-brands fa-instagram"></i>
                                 </div>
-                            </div>
-                        </div>
-
-                        <div class="item">
-
-                            <div class="reviewBox">
-                                <p>بلوبانک واقعاً بانک xndjdnمحبوبمه. همه‌چیزش یوزرفرندلیه.</p>
-
-                                <div class="review d-flex align-items-center justify-content-between">
-                                    <div class="profile d-flex align-items-stretch justify-content-center">
-                                        <div class="photo">
-                                            <img src="assets/images/tweet-avatar.png" alt="">
-                                        </div>
-                                        <div class="user ">
-
-                                            <h6>iliya-4909</h6>
-                                            <p>آبان 1404</p>
-                                        </div>
-
+                                <div class="content swiper-slide">
+                                    <img src="assets/images/Image3.jpg" alt="" />
+                                    <div class="text-content">
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
+                                            accusamus ratione nesciunt atque, dolores vel culpa debitis
+                                            officia expedita unde?
+                                        </p>
                                     </div>
-                                    <i class="fa-brands fa-x-twitter"></i>
                                 </div>
-                            </div>
-                        </div>
+                                <div class="content swiper-slide">
+                                    <img src="assets/images/Image4.jpg" alt="" />
+                                    <div class="text-content">
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
+                                            accusamus ratione nesciunt atque, dolores vel culpa debitis
+                                            officia expedita unde?
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="content swiper-slide">
+                                    <img src="assets/images/Image5.jpg" alt="" />
+                                    <div class="text-content">
 
-                        <div class="item">
-
-                            <div class="reviewBox">
-                                <p>بلوبانک واقعاً بانک xndjdnمحبوبمه. همه‌چیزش یوزرفرندلیه.</p>
-
-                                <div class="review d-flex align-items-center justify-content-between">
-                                    <div class="profile d-flex align-items-stretch justify-content-center">
-                                        <div class="photo">
-                                            <img src="assets/images/tweet-avatar.png" alt="">
-                                        </div>
-                                        <div class="user ">
-
-                                            <h6>marmaaaar</h6>
-                                            <p>تیر 1404</p>
-                                        </div>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
+                                            accusamus ratione nesciunt atque, dolores vel culpa debitis
+                                            officia expedita unde?
+                                        </p>
 
                                     </div>
-                                    <i class="fa-brands fa-instagram"></i>
+                                </div>
+                                <div class="content swiper-slide">
+                                    <img src="assets/images/Image6.jpg" alt="" />
+                                    <div class="text-content">
+
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
+                                            accusamus ratione nesciunt atque, dolores vel culpa debitis
+                                            officia expedita unde?
+                                        </p>
+
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="sliderBottom">
-                    <div class="owl-ltr owl-theme">
+            </div>
+        </section>
+        <!-- review slider -->
+        <section class="socialMedia mb-5 z-3">
+            <div class="followUs text-center">
+                <h2 class="fw-bold mb-4">ما را در شبکه‌های اجتماعی دنبال کنید</h2>
+                <div class="sliderTop">
+                    <div class="owl-carousel owl-top owl-theme" style="direction: ltr;">
+                        <div class="item">
+                            <div class="reviewBox ">
+                                <p>بلوبانک واقعاً بانک محبوبمه. همه‌چیزش یوزرفرندلیه.</p>
+                                <div class="review d-flex align-items-center justify-content-between">
+                                    <i class="fa-brands fa-x-twitter"></i>
+
+                                    <div class="profile d-flex align-items-stretch justify-content-center">
+
+                                        <div class="user ">
+
+                                            <h6>sabaaaa21</h6>
+                                            <p>مهر 1404</p>
+                                        </div>
+                                        <div class="photo">
+                                            <img src="assets/images/tweet-avatar.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="reviewBox ">
+                                <p>بلوبانک واقعاً بانک محبوبمه. همه‌چیزش یوزرفرندلیه.</p>
+                                <div class="review d-flex align-items-center justify-content-between">
+                                    <i class="fa-brands fa-x-twitter"></i>
+
+                                    <div class="profile d-flex align-items-stretch justify-content-center">
+
+                                        <div class="user ">
+
+                                            <h6>sabaaaa21</h6>
+                                            <p>مهر 1404</p>
+                                        </div>
+                                        <div class="photo">
+                                            <img src="assets/images/tweet-avatar.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="reviewBox ">
+                                <p>بلوبانک واقعاً بانک محبوبمه. همه‌چیزش یوزرفرندلیه.</p>
+                                <div class="review d-flex align-items-center justify-content-between">
+                                    <i class="fa-brands fa-x-twitter"></i>
+
+                                    <div class="profile d-flex align-items-stretch justify-content-center">
+
+                                        <div class="user ">
+
+                                            <h6>sabaaaa21</h6>
+                                            <p>مهر 1404</p>
+                                        </div>
+                                        <div class="photo">
+                                            <img src="assets/images/tweet-avatar.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="reviewBox ">
+                                <p>بلوبانک واقعاً بانک محبوبمه. همه‌چیزش یوزرفرندلیه.</p>
+                                <div class="review d-flex align-items-center justify-content-between">
+                                    <i class="fa-brands fa-x-twitter"></i>
+
+                                    <div class="profile d-flex align-items-stretch justify-content-center">
+
+                                        <div class="user ">
+
+                                            <h6>sabaaaa21</h6>
+                                            <p>مهر 1404</p>
+                                        </div>
+                                        <div class="photo">
+                                            <img src="assets/images/tweet-avatar.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- slider bottom -->
+
+                <div class="sliderBottom mb-5 mt-3">
+                    <div class="owl-carousel owl-bottom owl-theme">
                         <div class="item">
 
                             <div class="reviewBox">
@@ -662,7 +753,8 @@
 
             </div>
             <div class="container position-relative">
-                <div class="questions mt-5 mb-100 gap-1 position-relative d-flex align-items-center justify-content-center">
+                <div
+                    class="questions mt-5 mb-100 gap-1 position-relative d-flex align-items-center justify-content-center">
                     <div class="general d-flex flex-column align-items-stretch justify-content-center gap-1">
 
                         <div class="questionBox questionBoxS">
@@ -1346,23 +1438,281 @@
 
 
 
-     
+
     </main>
 
     <footer class="mt-5">
+        <div class="footerTop">
+            <div class="container">
 
-        
+                <div class="footerLogos d-flex align-items-stretch justify-content-between">
+                    <div class="blueLogo d-flex align-items-stretch justify-content-center flex-column mt-5 mb-5">
+                        <svg width="52" height="32" viewBox="0 0 52 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M27.4266 2.90918H30.0105V29.4027C30.0105 30.8372 28.8536 32.0001 27.4266 32.0001H24.8427V5.50658C24.8427 4.07208 25.9996 2.90918 27.4266 2.90918ZM39.3123 13.4025V23.2726C39.3123 25.4543 40.9211 27.1168 43.0331 27.1168C45.124 27.1168 46.7539 25.4541 46.7533 23.3362L46.7537 13.4025C46.7539 11.968 47.9107 10.8052 49.3377 10.8051H51.9216V23.0649C51.9216 27.9996 47.9421 31.9999 43.0331 31.9999C38.1241 31.9999 34.1446 27.9996 34.1446 23.0649V10.8051H36.7285C38.1555 10.8051 39.3123 11.968 39.3123 13.4025ZM5.20532 12.7729L5.20544 2.9098H2.62158C1.20794 2.9098 0.0377197 4.06383 0.0377197 5.5072V21.6111L0.0420235 21.6112C0.201377 27.3772 4.76578 32.0007 10.3732 32.0007C16.0813 32.0007 20.7078 27.3772 20.7086 21.2994C20.7086 21.2575 20.7084 21.2157 20.7078 21.1741C20.7083 21.1293 20.7086 21.0845 20.7086 21.0397C20.7086 15.1582 16.4514 10.3903 11.2 10.3903C8.92741 10.3903 6.84105 11.2832 5.20532 12.7729ZM4.89537 21.1436C4.89537 17.8442 7.30158 15.1695 10.2698 15.1695C13.238 15.1695 15.6442 17.8442 15.6442 21.1436C15.6442 24.4429 13.238 27.1176 10.2698 27.1176C7.30158 27.1176 4.89537 24.4429 4.89537 21.1436Z"
+                                fill="#4E91E6"></path>
+                            <path
+                                d="M12.4403 4.15584C13.5819 4.15584 14.5073 3.22553 14.5073 2.07792C14.5073 0.930317 13.5819 0 12.4403 0C11.2986 0 10.3732 0.930317 10.3732 2.07792C10.3732 3.22553 11.2986 4.15584 12.4403 4.15584Z"
+                                fill="#0C1011"></path>
+                        </svg>
+                        <p>Samab Bank</p>
+                    </div>
+                    <div class="goUp">
+                        <a href="#"><i class="fa-solid fa-arrow-up-from-bracket  mt-5 mb-5"></i></a>
+                    </div>
+                </div>
+                <div class="footerContent d-flex align-items-stretch justify-content-center g-3">
+                    <div class="footerServices w-75">
+                        <div class="content">
+                            <h6 class="fw-bold">خدمات</h6>
+                            <ul class="list-unstyled" style="">
+                                <li><a href="/services/account-top-up">شارژ حساب</a></li>
+                                <li><a href="/services/transfer">انتقال وجه</a></li>
+                                <li><a href="/services/box">باکس</a></li>
+                                <li><a href="/services/bills"> پرداخت قبوض</a></li>
+                                <li><a href="/services/mobile-charge">خرید شارژ</a></li>
+                                <li><a href="/services/referral">دعوت از دوستان</a></li>
+                                <li><a href="/services/financial-management">مدیریت مالی</a></li>
+                            </ul>
+                        </div>
+                        <div class="content">
+                            <h6>ازدواج</h6>
+                            <ul class="list-unstyled">
+                                <li><a href="/loan/marriage-loan">وام ازدواج</a></li>
+                                <li><a href="/loan/housing-loan">وام ودیعه مسکن</a></li>
+                                <li><a href="/loan/childbearing-loan">وام فرزندآوری</a></li>
+                                <li><a href="/loan/welfare-loan">وام بهزیستی</a></li>
+                                <li><a href="/loan/relief-committee-loan">وام کمیته امداد</a></li>
+                                <li><a href="/loan/blu-loan">وام سریع و آسان بلو</a></li>
+                            </ul>
+                        </div>
+                        <div class="content">
+                            <h6>بلو</h6>
+                            <ul class="list-unstyled">
+                                <li><a href="https://careers.blubank.ir/">موقعیت‌های شغلی</a></li>
+                                <li><a href="/faq">سوالات متداول</a></li>
+                                <li><a href="https://jrblubank.sb24.ir/">بلو جونیور</a></li>
+                                <li><a href="/about">ارتباط با ما</a></li>
+                                <li><a href="/about">درباره ما</a></li>
+                                <li><a href="/commercial-coperation">همکاری با ما</a></li>
+                                <li><a href="/blog">بلاگ</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="blueDownload w-25 text-center">
+                        <h4>بلو؛ بانک ولی دوست‌داشتنی</h4>
+                        <button type="button" class="btn btns btn-primary w-100">دانلود و نصب بلو</button>
+                    </div>
+                </div>
+            </div>
+        </div>
 
+        <div class="footerBottom">
+            <div class="container">
+                <div class="footerInfo d-flex align-items-center justify-content-between ">
+                    <div class="footerText  d-flex align-items-center justify-content-start gap-4">
+                        <div class="phone">
+                            <span> <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M4.5 11.5L10 9L8 4H5C4.46957 4 3.96086 4.21071 3.58579 4.58579C3.21071 4.96086 3 5.46957 3 6C3.23705 9.90074 4.8935 13.5798 7.65683 16.3432C10.4202 19.1065 14.0993 20.763 18 21C18.5304 21 19.0391 20.7893 19.4142 20.4142C19.7893 20.0391 20 19.5304 20 19V16L15 14L12.5 19.5"
+                                        stroke="#718E9C" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path
+                                        d="M14 8C14.5304 8 15.0391 8.21071 15.4142 8.58579C15.7893 8.96086 16 9.46957 16 10"
+                                        stroke="#718E9C" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path
+                                        d="M14 4C15.5913 4 17.1174 4.63214 18.2426 5.75736C19.3679 6.88258 20 8.4087 20 10"
+                                        stroke="#718E9C" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                                ۰۲۱-۹۱۰۳۶۰۶۰ پشتیبانی: ۰۲۱-۸۷۶۴۱
+
+                            </span>
+                        </div>
+                        <div class="space">
+                            <svg width="2" height="20" viewBox="0 0 2 12" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 0V12" stroke="#BFCCD3" stroke-width="0.5"></path>
+                            </svg>
+                        </div>
+                        <div class="address">
+                            <span>
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M9 11C9 11.7956 9.31607 12.5587 9.87868 13.1213C10.4413 13.6839 11.2044 14 12 14C12.7956 14 13.5587 13.6839 14.1213 13.1213C14.6839 12.5587 15 11.7956 15 11C15 10.2044 14.6839 9.44129 14.1213 8.87868C13.5587 8.31607 12.7956 8 12 8C11.2044 8 10.4413 8.31607 9.87868 8.87868C9.31607 9.44129 9 10.2044 9 11Z"
+                                        stroke="#718E9C" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path
+                                        d="M17.657 16.657L13.414 20.8999C13.039 21.2746 12.5306 21.485 12.0005 21.485C11.4704 21.485 10.962 21.2746 10.587 20.8999L6.34302 16.657C5.22424 15.5381 4.46235 14.1127 4.1537 12.5608C3.84506 11.009 4.00351 9.40047 4.60902 7.93868C5.21453 6.4769 6.23991 5.22749 7.5555 4.34846C8.87108 3.46943 10.4178 3.00024 12 3.00024C13.5823 3.00024 15.129 3.46943 16.4445 4.34846C17.7601 5.22749 18.7855 6.4769 19.391 7.93868C19.9965 9.40047 20.155 11.009 19.8463 12.5608C19.5377 14.1127 18.7758 15.5381 17.657 16.657Z"
+                                        stroke="#718E9C" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                                تهران، خ نلسون ماندلا، خ شهید رحیمی، پلاک ۴۳
+
+                            </span>
+                        </div>
+                    </div>
+                    <div class="footerContact">
+                        <ul class="list-unstyled gap-3 d-flex align-items-center justify-content-center m-0 flex-wrap ">
+                            <li>
+                                <a href="#">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M4 8C4 6.93913 4.42143 5.92172 5.17157 5.17157C5.92172 4.42143 6.93913 4 8 4H16C17.0609 4 18.0783 4.42143 18.8284 5.17157C19.5786 5.92172 20 6.93913 20 8V16C20 17.0609 19.5786 18.0783 18.8284 18.8284C18.0783 19.5786 17.0609 20 16 20H8C6.93913 20 5.92172 19.5786 5.17157 18.8284C4.42143 18.0783 4 17.0609 4 16V8Z"
+                                            stroke="#253035" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        <path
+                                            d="M9 12C9 12.7956 9.31607 13.5587 9.87868 14.1213C10.4413 14.6839 11.2044 15 12 15C12.7956 15 13.5587 14.6839 14.1213 14.1213C14.6839 13.5587 15 12.7956 15 12C15 11.2044 14.6839 10.4413 14.1213 9.87868C13.5587 9.31607 12.7956 9 12 9C11.2044 9 10.4413 9.31607 9.87868 9.87868C9.31607 10.4413 9 11.2044 9 12Z"
+                                            stroke="#253035" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        <path d="M16.5 7.5V7.51" stroke="#253035" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <svg width="2" height="20" viewBox="0 0 2 12" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 0V12" stroke="#BFCCD3" stroke-width="0.5"></path>
+                                </svg>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8.5 11.0181V16.0181" stroke="#253035" stroke-linecap="round"
+                                            stroke-linejoin="round"></path>
+                                        <path
+                                            d="M12 16.0181V13.1014C12 11.9505 12.8951 11.0181 14 11.0181V11.0181C15.1049 11.0181 16 11.9505 16 13.1014V16.0181"
+                                            stroke="#253035" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        <path
+                                            d="M8.499 8.29307C8.375 8.29307 8.274 8.39407 8.275 8.51807C8.275 8.64207 8.376 8.74307 8.5 8.74307C8.624 8.74307 8.725 8.64207 8.725 8.51807C8.725 8.39307 8.624 8.29307 8.499 8.29307"
+                                            stroke="#253035" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        <path
+                                            d="M4 8C4 6.93913 4.42143 5.92172 5.17157 5.17157C5.92172 4.42143 6.93913 4 8 4H16C17.0609 4 18.0783 4.42143 18.8284 5.17157C19.5786 5.92172 20 6.93913 20 8V16C20 17.0609 19.5786 18.0783 18.8284 18.8284C18.0783 19.5786 17.0609 20 16 20H8C6.93913 20 5.92172 19.5786 5.17157 18.8284C4.42143 18.0783 4 17.0609 4 16V8Z"
+                                            stroke="#253035" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <svg width="2" height="20" viewBox="0 0 2 12" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 0V12" stroke="#BFCCD3" stroke-width="0.5"></path>
+                                </svg>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5 5.01807L15.2664 19.0181H19L8.73363 5.01807H5Z" stroke="#253035"
+                                            stroke-linecap="round" stroke-linejoin="round"></path>
+                                        <path d="M5 19.0181L10.922 13.0961M13.0745 10.9436L19 5.01807" stroke="#253035"
+                                            stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <svg width="2" height="20" viewBox="0 0 2 12" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 0V12" stroke="#BFCCD3" stroke-width="0.5"></path>
+                                </svg>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M12.9839 16.108L10.9189 18.117C10.5609 18.465 9.96192 18.311 9.81692 17.833L8.44092 13.303"
+                                            stroke="#253035" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        <path
+                                            d="M15.2928 10.1289C15.2928 10.1289 12.7038 12.4649 11.3758 13.6639C10.9788 14.0219 11.0118 14.6519 11.4418 14.9689L16.8198 18.9419C17.3488 19.3329 18.1048 19.0459 18.2418 18.4019L20.8828 5.95489C21.0108 5.35289 20.4198 4.84989 19.8458 5.07089L4.3308 11.0549C3.8738 11.2309 3.8958 11.8839 4.3628 12.0299L8.4398 13.3019"
+                                            stroke="#253035" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <svg width="2" height="20" viewBox="0 0 2 12" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 0V12" stroke="#BFCCD3" stroke-width="0.5"></path>
+                                </svg>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="12.2365" cy="11.9977" r="7.6984" stroke="#253035"></circle>
+                                        <circle cx="13.0863" cy="15.2074" r="1.125"
+                                            transform="rotate(-15 13.0863 15.2074)" stroke="#253035"></circle>
+                                        <circle cx="8.95254" cy="12.8212" r="1.125"
+                                            transform="rotate(35 8.95254 12.8212)" stroke="#253035"></circle>
+                                        <circle cx="11.3388" cy="8.68734" r="1.125"
+                                            transform="rotate(-15 11.3388 8.68734)" stroke="#253035"></circle>
+                                        <circle cx="15.4726" cy="11.0741" r="1.125"
+                                            transform="rotate(35 15.4726 11.0741)" stroke="#253035"></circle>
+                                        <path
+                                            d="M21.6686 9.04323V9.04323C22.1281 7.32816 21.1103 5.56528 19.3952 5.10573V5.10573M5.10638 4.60541V4.60541C5.56594 2.89034 7.32881 1.87254 9.04388 2.33209V2.33209M4.60606 18.8943V18.8943C2.89099 18.4347 1.87319 16.6718 2.33275 14.9568V14.9568M18.8949 19.3946V19.3946C18.4354 21.1097 16.6725 22.1275 14.9574 21.6679V21.6679"
+                                            stroke="#253035" stroke-linecap="round"></path>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <svg width="2" height="20" viewBox="0 0 2 12" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 0V12" stroke="#BFCCD3" stroke-width="0.5"></path>
+                                </svg>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M3 8.51807C3 7.58981 3.37928 6.69957 4.05442 6.04319C4.72955 5.38682 5.64522 5.01807 6.6 5.01807H17.4C18.3548 5.01807 19.2705 5.38682 19.9456 6.04319C20.6207 6.69957 21 7.58981 21 8.51807V15.5181C21 16.4463 20.6207 17.3366 19.9456 17.9929C19.2705 18.6493 18.3548 19.0181 17.4 19.0181H6.6C5.64522 19.0181 4.72955 18.6493 4.05442 17.9929C3.37928 17.3366 3 16.4463 3 15.5181V8.51807Z"
+                                            stroke="#253035" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        <path d="M10 9L15 12L10 15V9Z" stroke="#253035" stroke-linecap="round"
+                                            stroke-linejoin="round"></path>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
     </footer>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/blue.js"></script>
 
+    <!-- Swiper JS -->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            effect: "coverflow",
+            direction: "vertical",
+            grabCursor: true,
+            centeredSlides: true,
+            loop: true,
+            initialSlide: 3,
+            slidesPerView: "auto",
+            coverflowEffect: {
+                rotate: 0,
+                stretch: 0,
+                depth: 100,
+                modifier: 1.5,
+                slideShadows: true,
+            },
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: true,
+            },
+        });
+    </script>
     <script>
         $(document).ready(function () {
-            $(".owl-carousel").owlCarousel({
-                rtl: true,
+            $(".owl-top").owlCarousel({
+                rtl: false,
                 loop: true,
                 margin: 20,
                 nav: false,
@@ -1379,24 +1729,27 @@
             });
         });
 
-        // $(document).ready(function () {
-        //     $(".owl-ltr").owlCarousel({
-        //         rtl: false,
-        //         loop: true,
-        //         margin: 20,
-        //         nav: false,
-        //         dots: false,
-        //         autoplay: true,
-        //         autoplayTimeout: 3000,
-        //         autoplaySpeed: 800,
-        //         slideBy: 2,
-        //         responsive: {
-        //             0: { items: 1 },
-        //             600: { items: 2 },
-        //             1000: { items: 4 }
-        //         }
-        //     });
-        // });
+        $(document).ready(function () {
+            $(".owl-bottom").owlCarousel({
+                rtl: true,
+
+                loop: true,
+                margin: 20,
+                nav: false,
+                dots: false,
+                autoplay: true,
+                autoplayTimeout: 3000,
+                autoplaySpeed: 800,
+                slideBy: 2,
+                responsive: {
+                    0: { items: 1 },
+                    600: { items: 2 },
+                    1000: { items: 4 }
+                }
+            });
+        });
+
+
     </script>
 
 
