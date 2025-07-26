@@ -135,8 +135,26 @@ header {
     background-color: #EDF4FC;
 }
 
+.serviceUl li{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 1rem;
+}
+
+.serviceLi .navItemIcon svg {
+  color: var(--gray);
+  transition: color 0.2s ease;
+}
+
+.serviceLi:hover .navItemIcon svg {
+color: var(--bColor);}
+
+
+
 .menuIcon {
     color: var(--bColor);
+    font-size: 13px;
     display: none;
 }
 
