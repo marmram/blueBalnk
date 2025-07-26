@@ -1011,11 +1011,16 @@ header {
 .footerInfo {
     color: #253035;
     font-size: 14px;
+    margin-bottom: 3%;
 }
 
 .footerBottom {
-    padding-bottom: 30px;
-    padding-top: 30px;
+    padding-bottom: 60px;
+    padding-top: 60px;
     background-color: #E4EAEC;
     border-top: 2px solid #D2DBE0;
+}
+.copyRight{
+    font-size: 12px;
+    color: var(--gray);
 }
