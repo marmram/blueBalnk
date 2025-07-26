@@ -5,15 +5,7 @@
     box-sizing: border-box;
 }
 
-@font-face {
-    font-family: "Yekan Bakh VF";
-    src: url('../fonts/Yekan_Bakh_Fanum_Regular.TTF') format('ttf');
-    font-weight: normal;
-    font-style: normal;
-}
-
 body {
-    font-family: "Yekan Bakh VF", tahoma, arial, serif;
     font-family: "Vazirmatn", sans-serif;
 
 }
@@ -284,10 +276,6 @@ color: var(--bColor);}
     }
 }
 
-.container:hover .box {
-    animation-play-state: paused;
-}
-
 .box .img {
     position: relative;
     left: -63%;
@@ -329,10 +317,6 @@ color: var(--bColor);}
     100% {
         rotate: -360deg;
     }
-}
-
-.container:hover .img .imgBx img {
-    animation-play-state: paused;
 }
 
 .fastCaption {
@@ -649,6 +633,8 @@ color: var(--bColor);}
     border-radius: 20px;
 }
 
+/***********************************Swiper Slider****************************/
+
 .collection{
     height:500px; 
     overflow: hidden;
@@ -693,8 +679,6 @@ color: var(--bColor);}
     margin: 1rem 0;
     cursor: pointer;
 }
-
-/***********************************Swiper Slider****************************/
 
 .swiperBlueLine {
     background-color: #ffffffff;
@@ -752,7 +736,7 @@ color: var(--bColor);}
 .socialMedia {
     width: 100%;
     padding: 50px 0;
-
+    margin-bottom: 100px;
 }
 
 .sliderTop {
@@ -792,7 +776,7 @@ color: var(--bColor);}
     color: var(--gray);
 }
 
-/****************************************teaser sec******************************************/
+/****************************************teaser styles******************************************/
 .teaserSec {
     margin-bottom: 50px;
     margin-top: 100px;
@@ -840,6 +824,8 @@ color: var(--bColor);}
     margin: 0;
     width: 100%;
 }
+
+/***********************************faq Styles****************************/
 
 .faqSpan {
     background-color: #00ab84;
@@ -961,6 +947,8 @@ color: var(--bColor);}
 .openAccountQ {
     opacity: 0;
 }
+
+/***********************************Footer Styles****************************/
 
 .topFooter {
     background-color: #F2F5F6;
